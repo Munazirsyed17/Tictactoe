@@ -1,8 +1,13 @@
 body{
     padding: 0;
     margin: 0;
+    color: white;
+    background-image: linear-gradient(62deg, #91b6db 0%, #775d91 100%);
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 button{
+    color: white;
     background: none;
     border: none;
     outline: none;
@@ -11,9 +16,13 @@ button{
         cursor: pointer;
     }
 
-
+.heading{
+    color: rgb(255, 255, 255);
+   
+    word-spacing:.2rem;
+}
 .app{
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +31,16 @@ button{
 .board .board-row{
     display: flex;
     flex-direction: row;
-   width: 240px;
+   
     border-bottom: 2px solid #000;
 }
 .board .board-row:last-child{
     border-bottom: none;
 }
-
+.status{
+    color: rgb(20, 104, 31);
+    border-bottom: 2px solid rgb(22, 22, 22);
+}
 
 .square{
     width: 80px; 
@@ -41,4 +53,41 @@ button{
 }
 .square:last-child{
     border-right: none;
+}
+.newgame{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    background-color: green;
+    border-radius: 25px;
+    align-items: center;
+   align-content: center;
+}
+
+footer {
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    margin: 0 5px 5px 0px;
+    z-index: 100;
+    display: flex;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+
+/* Media Query */
+@media (max-width: 500px) 
+{
+    .newgame{
+        font-size: 18px;
+        margin-left: 10vw;
+    }
+   footer{
+    font-size: small;
+   }
 }
