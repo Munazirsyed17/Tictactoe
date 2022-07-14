@@ -11,6 +11,8 @@ button{
     background: none;
     border: none;
     outline: none;
+    z-index: 100;
+   
 }
    button:hover{
         cursor: pointer;
@@ -18,8 +20,9 @@ button{
 
 .heading{
     color: rgb(255, 255, 255);
-   
+    box-shadow: 5px 5px 10px rgb(73, 19, 94);
     word-spacing:.2rem;
+    padding: 20px;
 }
 .app{
     font-size: 25px;
@@ -62,6 +65,7 @@ button{
     border-radius: 25px;
     align-items: center;
    align-content: center;
+   box-shadow: 5px 5px 10px black;
 }
 
 footer {
@@ -77,6 +81,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
+    
 }
 
 
